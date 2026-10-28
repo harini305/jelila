@@ -1,0 +1,42 @@
+{
+  "_about": "Offerings and prices as published on jelila.com on 2026-10-27. Primary source: the 2026 healing-menu image (menu-jelila-best-healer-ubud-and-online.jpg, uploaded 2026/06, used on /sessions/; identical prices in 6c3ec763-57fe-4174-a979-4507d507ce4a.jpeg, uploaded 2025/01, used on the 2026 Healing Menu page). Transcribed manually from the image; prices exist ONLY as image text there. 'sessions_page' = text on /sessions/ (modified 2026-06-29). Conflicts are listed, never resolved. All prices US$ unless stated. OWNER MUST CONFIRM before publishing.",
+  "currency_note": "Menu image states 'ALL PRICES ARE IN US$'. The only IDR price found is 'Biohacking Healing Journey Rp. 795k' on /spiritual-advisor-ubud-bali-and-online/.",
+  "offerings": [
+    {"name": "Energetic Enhancements", "description_source": "A way of doing The Reprogramming through an intuitive session - so less talking. Includes: Perceptions Enhancer, Energetic Power Shift, Increase Clarity, Soulful Energy Massage, Vitalise Source, Clearing of Negative & Karmic Energy.", "menu_image": "$95 per hour", "sessions_page": "US$ 95 (listed in '5 Popular Sessions', 1 hour)", "conflicts": []},
+    {"name": "Intuitive Healing / Chakra Balancing (crystals, sound, energy)", "description_source": "Bathe in positive energies as your chi flow is enhanced, cleansing negativity and balancing chakras... crystal healing with 20 kinds of programmed crystals, sound healing, psychic insights, energy healing.", "menu_image": "1 hr $80; 1.5 hrs $120", "sessions_page": "1 hour US$ 80", "conflicts": []},
+    {"name": "Energy Healing", "menu_image": "1 hr $80", "sessions_page": null, "conflicts": []},
+    {"name": "The Reprogramming - Signature Session", "description_source": "Rapidly change your mindset from negative, to positive, permanently. A unique rapid therapy developed by Jelila through her 26 year successful healing practice.", "menu_image": "2 hrs $300 incl. free healing MP3 worth $22; 1.5 hr $225; 1 hr $150", "sessions_page": "2 hours US$ 300 (1.5h Reprogramming + 30 min intuitive healing) incl. 1 free healing music CD download worth US$22; 1 hour US$ 150", "conflicts": ["Sessions page lower down says complimentary CD worth $30 in one place and $22 in another."]},
+    {"name": "Good To Go (Energy + Reprogramming)", "description_source": "A 'quick n dirty' Reprogramming session - with a bit of intuitive healing thrown in.", "menu_image": "45 mins $95; 1 hr $120", "sessions_page": null, "conflicts": ["Image text contains typo 'thrown iin'."]},
+    {"name": "Deep Reprogramming", "description_source": "Reprogram even deeper, reaching ancestral trauma... Ancient Annunaki belief system, overcome self-destructiveness, inner slavery, deep inner conflicts.", "menu_image": "2 hours US$ 440", "sessions_page": null, "conflicts": []},
+    {"name": "Light Language Soulmate Reading", "menu_image": "40 mins $60; 1 hr $110", "sessions_page": "General Aura Reading 40 minutes US$60; older block lower on page: 'Soulmate Love Reading 40 min US$ 40, 60 min US$ 60'", "conflicts": ["Legacy block on /sessions/ shows 40 min $40 / 60 min $60."]},
+    {"name": "Soulmate Healing / Soulmate Love Aura Reading", "description_source": "See your energy & your soulmate's energy towards you. Or focus on your own issues. (Sessions page: reading of sacred geometric shape + colour in each chakra, then a Reprogramming 'Power Up'.)", "menu_image": "1.5 hr $220", "sessions_page": "1.5 hours US$ 210 ('Note: Soulmate Love Reading is now US$210. 1.5hr')", "conflicts": ["$220 (menu image) vs $210 (sessions text)."]},
+    {"name": "Past Lives / Trauma Release (Past Life Journey)", "description_source": "Let go & understand. A gentle, private process (no disclosure needed) with permanent results: your trauma is gone.", "menu_image": "1.5 hr $165; 1 hr $110", "sessions_page": "Past-Life Reading 1 hour US$ 95; Past-Life Journey 1.5 hours US$ 165", "conflicts": ["1 hr: $110 (image) vs Past-Life Reading 1 hr $95 (sessions text) - may be two different services."]},
+    {"name": "The Gift of Self-Love (longer programme)", "menu_image": "10 hours over 3-7 days, US$ 2,200", "sessions_page": null, "conflicts": []},
+    {"name": "The Gift of Harmony - Personal Workshop Intensive", "description_source": "Revolutionise your life. Releases 11 deepest core beliefs. Balance across Work, Love, Play, Spirituality.", "menu_image": "8 hours over 3 days, US$ 1,800", "sessions_page": "Individual Journey $1,800 (includes crystal healing + complimentary Healing CD download worth $22 / $30). 8-hour intensive usually over 3 days.", "conflicts": ["Headings say 'REVOLUTIONISE YOUR LIFE in 3 Days!' and elsewhere 'in 4 Days!'; contact/home tile says 'Powerful Relationship Therapy 4 Day Course'.", "Page 13299 shows a separate price table ($50-$2,000) for course/payment options - needs owner review."]},
+    {"name": "Alien Wedding (longer programme)", "menu_image": "10 hours over 3-7 days, US$ 2,200", "sessions_page": null, "conflicts": ["Bio page calls it 'a 4 day Transformation Process'."]},
+    {"name": "Light Language Grids", "sessions_page": "Stationary Grid (7 shapes) US$45; Goal Grid (49 shapes) $195; Lifetime Grid (144 shapes) $395", "menu_image": null, "conflicts": ["Not on 2026 menu image - may be discontinued; confirm."]},
+    {"name": "Yoga Chord (1.2 m crystal strand) - product", "menu_image": "$220", "sessions_page": null, "conflicts": ["Packages page (2015-2017 data) also lists Yoga Chord $220."]},
+    {"name": "Biohacking Healing Journey (separate experience, Ubud)", "description_source": "Entry-level experience for 1 or 2 people with crystals and biohacking technology, guided by a recorded track by Jelila. Location (from 2023 posts): 31 Jalan Sukma Kesuma, Tebesaya, Ubud, upstairs at Ubud Fairy Village (pink shop next to Tebesaya banjar).", "menu_image": null, "sessions_page": null, "other_sources": "Booked via biohackinghealingjourney.com and calendly.com/biohackinghealingjourney. /spiritual-advisor-ubud-bali-and-online/ shows the link text 'Biohacking Healing Journey Rp. 795k' (link target malformed: 'http://Https://Biohacking Healing Journey.com'). Date/currency validity of Rp. 795k unconfirmed.", "conflicts": ["Whether the Tebesaya address is still current (posts from 2023) is unverified."]},
+    {"name": "Packages (Not Sure What to Book Package 1, Detox Support 1 & 2, etc.)", "sessions_page": null, "menu_image": null, "other_sources": "/packages/ lists e.g. 'Not Sure What to Book' Package 1 US$544.50, Detox Support Package 1 US$450, Detox Support Package 2 US$957 - built from older component prices (e.g. Soulmate Reading 1h $60) and a 'Packages Summary 2015, 2016, 2017' PDF.", "conflicts": ["Package maths uses outdated component prices; treat all package prices as UNCONFIRMED."]}
+  ],
+  "payment_methods_stated": [
+    "Home: 'Credit cards (but not Amex), Cash, or Paypal accepted.'",
+    "2026 Healing Menu page: 'You can pay by credit card, online by credit card, by cash or by WISE transfer.'",
+    "Bio page (June 2026): 'Online Store: Payment not working June 2026 so please just browse!'",
+    "Menu image: 'Pay Online: www.jelilahealing.storenvy.com', 'Credit Cards Accepted'."
+  ],
+  "booking_channels_stated": [
+    "Calendly: https://calendly.com/jelila (sessions with Jelila) - instructions: choose 'China Singapore Perth' timezone, pick day/time, enter email and session, then prepay to hold booking.",
+    "Calendly: https://calendly.com/biohackinghealingjourney (Biohacking Healing Journey)",
+    "biohackinghealingjourney.com (/bookings)",
+    "WhatsApp: +62 813 3956 1271 (https://wa.me/6281339561271)",
+    "Email: jelila@jelila.com",
+    "Instagram: @online_healer"
+  ],
+  "session_format_facts": [
+    "Sessions in person in Ubud, Bali and online (Zoom, WhatsApp video etc.).",
+    "FAQ: sessions typically last 60 to 90 minutes.",
+    "'You must book in advance.' (home)",
+    "Changing session type after meeting Jelila 'usually possible for solo bookings (depending on her diary)'."
+  ]
+}

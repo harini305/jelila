@@ -1,0 +1,730 @@
+[
+ {
+  "url": "https://wa.me/81339561271?text=Jelila%20please%20message%20me%20about%20The%20Gift%20of%20Harmony",
+  "status": 200,
+  "final": "https://api.whatsapp.com/send/?phone=81339561271&text=Jelila+please+message+me+about+The+Gift+of+Harmony&type=phone_number&app_absent=0",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://wa.me/6281339561271",
+  "status": 200,
+  "final": "https://api.whatsapp.com/send/?phone=6281339561271&text&type=phone_number&app_absent=0",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://wa.me/62",
+  "status": 200,
+  "final": "https://api.whatsapp.com/send/?phone=62&text&type=phone_number&app_absent=0",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://wa.me/628133956127",
+  "status": 200,
+  "final": "https://api.whatsapp.com/send/?phone=628133956127&text&type=phone_number&app_absent=0",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://wa.me/6281339561271?text=Hi%20Jelila%20I%20found%20you%20on%20your%20website!",
+  "status": 200,
+  "final": "https://api.whatsapp.com/send/?phone=6281339561271&text=Hi+Jelila+I+found+you+on+your+website%21&type=phone_number&app_absent=0",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.amazon.com/stores/author/B00BNPD78S?",
+  "status": 200,
+  "final": "https://www.amazon.com/stores/author/B00BNPD78S?",
+  "type": "text/html;charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.amazon.com/dp/B00TQWRNDU",
+  "status": 200,
+  "final": "https://www.amazon.com/dp/B00TQWRNDU",
+  "type": "text/html;charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.amazon.com/dp/1491069643",
+  "status": 200,
+  "final": "https://www.amazon.com/dp/1491069643",
+  "type": "text/html;charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.amazon.com/Gift-Self-Love-workbooks-reprogramming-ebook/dp/B0CFJ9JJDR#",
+  "status": 200,
+  "final": "https://www.amazon.com/Gift-Self-Love-workbooks-reprogramming-ebook/dp/B0CFJ9JJDR",
+  "type": "text/html;charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.amazon.com/dp/B00P26S9G4",
+  "status": 200,
+  "final": "https://www.amazon.com/dp/B00P26S9G4",
+  "type": "text/html;charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://jelilahealing.storenvy.com/collections/579502-dynamic-wellness-sessions",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/collections/579502-dynamic-wellness-sessions",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.JelilaHealing.storenvy.com",
+  "status": "ERR URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failur",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://jelilahealing.storenvy.com/collections/527521-chakra-balancing-sessions",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/collections/527521-chakra-balancing-sessions",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://jelilahealing.storenvy.com/collections/527494-reprogramming-sessionshttp://jelilahealing.storenvy.com/collections/527494-reprogramming-sessions",
+  "status": 404,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://jelilahealing.storenvy.com/collections/527671-the-gift-of-harmony",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/collections/527671-the-gift-of-harmony",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://calendly.com/jelila",
+  "status": 200,
+  "final": "https://calendly.com/jelila",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.calendly.com/jelila",
+  "status": 200,
+  "final": "https://calendly.com/jelila",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://calendly.com/biohackinghealingjourney",
+  "status": 200,
+  "final": "https://calendly.com/biohackinghealingjourney",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.calendly.com/jelila",
+  "status": 200,
+  "final": "https://calendly.com/jelila",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.calendly.com/jelila\u201d>Booking",
+  "status": "ERR UnicodeEncodeError: 'ascii' codec can't encode character '\\u201d' in position 11: ordinal not in ran",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://eepurl.com/kPeqf",
+  "status": 200,
+  "final": "https://wordpress.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=4dcb0e94d2",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "36366"
+ },
+ {
+  "url": "http://eepurl.com/GnG9v",
+  "status": 200,
+  "final": "https://wordpress.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=4dcb0e94d2",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "36366"
+ },
+ {
+  "url": "http://eepurl.com/Ls8xD",
+  "status": 200,
+  "final": "https://jelila.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=d121f5a7c4",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "12128"
+ },
+ {
+  "url": "http://eepurl.com/Ls8xD&#8221",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://eepurl.com/Ls8xD\u201d><img",
+  "status": "ERR UnicodeEncodeError: 'ascii' codec can't encode character '\\u201d' in position 10: ordinal not in ran",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://eepurl.com/kPeqf\u201d><img",
+  "status": "ERR UnicodeEncodeError: 'ascii' codec can't encode character '\\u201d' in position 10: ordinal not in ran",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://eepurl.com/kPeqf&#8221",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://eepurl.com/kPeqf",
+  "status": 200,
+  "final": "https://wordpress.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=4dcb0e94d2",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "36366"
+ },
+ {
+  "url": "http://eepurl.com/icHlw",
+  "status": 200,
+  "final": "https://wordpress.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=4dcb0e94d2",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "36366"
+ },
+ {
+  "url": "https://jelila.bandcamp.com/album/oooh-aaah-tantra-being-multi-orgasmic-sacred-sexuality-if-you-want-to-be-multi-orgasmic-listen-to-this",
+  "status": 200,
+  "final": "https://jelila.bandcamp.com/album/oooh-aaah-tantra-being-multi-orgasmic-sacred-sexuality-if-you-want-to-be-multi-orgasmic-listen-to-this",
+  "type": "text/html; charset=utf-8",
+  "bytes": "3038"
+ },
+ {
+  "url": "https://jelila.bandcamp.com/track/my-fathers-love-free-track",
+  "status": 200,
+  "final": "https://jelila.bandcamp.com/track/my-fathers-love-free-track",
+  "type": "text/html; charset=utf-8",
+  "bytes": "3038"
+ },
+ {
+  "url": "https://jelila.bandcamp.com/album/oooh-aaah-tantra-being-multi-orgasmic-sacred-sexuality-recording-of-talk-5-dec-2013",
+  "status": 200,
+  "final": "https://jelila.bandcamp.com/album/oooh-aaah-tantra-being-multi-orgasmic-sacred-sexuality-recording-of-talk-5-dec-2013",
+  "type": "text/html; charset=utf-8",
+  "bytes": "3038"
+ },
+ {
+  "url": "https://jelila.bandcamp.com/track/as-i-sit-free-track",
+  "status": 200,
+  "final": "https://jelila.bandcamp.com/track/as-i-sit-free-track",
+  "type": "text/html; charset=utf-8",
+  "bytes": "3038"
+ },
+ {
+  "url": "https://jelila.bandcamp.com/track/dipping-into-you",
+  "status": 200,
+  "final": "https://jelila.bandcamp.com/track/dipping-into-you",
+  "type": "text/html; charset=utf-8",
+  "bytes": "3038"
+ },
+ {
+  "url": "https://instagram.com/online_healer",
+  "status": 200,
+  "final": "https://www.instagram.com/online_healer",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://Instagram.com/Online_Healer",
+  "status": 200,
+  "final": "https://www.instagram.com/Online_Healer",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://instagram.com/Online_Healer",
+  "status": 200,
+  "final": "https://www.instagram.com/Online_Healer",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.instagram.com/ubudfairyvillage/",
+  "status": 200,
+  "final": "https://www.instagram.com/ubudfairyvillage/",
+  "type": "text/html; charset=\"utf-8\"",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.tripadvisor.com/Attraction_Review-g297701-d7113538-Reviews-Jelila_Spiritual_Healer_Ubud-Ubud_Bali.html",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.tripadvisor.com/Attraction_Review-g297701-d7113538-Reviews-Jelila_Spiritual_Healer_Ubud-Ubud_Bali.html",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.tripadvisor.com/Attraction_Review-g297701-d7113538-Reviews-Jelila_Spiritual_Healer_Ubud-Ubud_Gianyar_Regency_Bali.html",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.tripadvisor.com/Attraction_Review-g297701-d7113538-Reviews-Jelila_Spiritual_Healer_Ubud-Ubud_Bali.html\u201d><img",
+  "status": "ERR UnicodeEncodeError: 'ascii' codec can't encode character '\\u201d' in position 91: ordinal not in ran",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.tripadvisor.com/Attraction_Review-g297701-d7113538-Reviews-Jelila_Spiritual_Healer_Ubud-Ubud_Bali.html&#8221",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.etsy.com/shop/JelilaHealing",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.etsy.com/shop/JelilaHealing?section_id=11620778&ref=shopsection_leftnav_9",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.etsy.com/shop/JelilaHealing?section_id=12761332",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.etsy.com/shop/JelilaHealing?section_id=13121968",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.etsy.com/shop/JelilaHealing?section_id=12346401",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.youtube.com/playlist?list=PLYJ_Yan0b0bWLoyWSM2X7Wh2Ormpaz_Ir",
+  "status": 200,
+  "final": "https://www.youtube.com/playlist?list=PLYJ_Yan0b0bWLoyWSM2X7Wh2Ormpaz_Ir",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.youtube.com/v/KhqG7cQqixk?start=000&end=22&version=3&#8243",
+  "status": 200,
+  "final": "https://www.youtube.com/v/KhqG7cQqixk?start=000&end=22&version=3&#8243",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.youtube.com/v/vwcWNkRyTwE?start=287&end=540&version=3&#8243",
+  "status": 200,
+  "final": "https://www.youtube.com/v/vwcWNkRyTwE?start=287&end=540&version=3&#8243",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.youtube.com/v/V6-nf-f9YR8&#8243",
+  "status": 200,
+  "final": "https://www.youtube.com/v/V6-nf-f9YR8&#8243",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=V6-nf-f9YR8",
+  "status": 200,
+  "final": "https://www.youtube.com/watch?v=V6-nf-f9YR8",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://bit.ly/ChakB",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/collections/527521-chakra-balancing-sessions/products/4951267-session-chakra-balancing-1-hour",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://bit.ly/TripA",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://bit.ly/DetoxS2",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/collections/1054449-detox-packages/products/12405975-detox-support-2-package",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://bit.ly/PofCBk",
+  "status": 200,
+  "final": "https://jelilahealing.storenvy.com/products/4976704-book-the-power-of-crystals-by-jelila",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.bit.ly/dreamscourse",
+  "status": 200,
+  "final": "https://jelila-healing-for-your-happy-life.teachable.com/p/create-your-dreams-manifestation-mastery",
+  "type": "text/html; charset=utf-8",
+  "bytes": "137153"
+ },
+ {
+  "url": "https://biohackinghealingjourney.com",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://biohackinghealingjourney.com/bookings",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/bookings/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://biohackinghealingjourney.com/",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.biohackinghealingjourney.com",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.biohackinghealingjourney.com/",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.biohackinghealingjourney.com",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://biohackinghealingjourney.com",
+  "status": 200,
+  "final": "https://biohackinghealingjourney.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://uquiz.com/quiz/O3qkQG/are-you-a-master-manifestor-or-could-your-dream-making-mojo-use-a-boost",
+  "status": 200,
+  "final": "https://uquiz.com/quiz/O3qkQG/are-you-a-master-manifestor-or-could-your-dream-making-mojo-use-a-boost",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://uquiz.com/embed.js",
+  "status": 200,
+  "final": "https://uquiz.com/embed.js",
+  "type": "text/javascript",
+  "bytes": "16216"
+ },
+ {
+  "url": "https://spiritualhealerbali.com/2025/10/01/building-the-life-you-want-a-soulful-self-assessment/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/2023/09/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/reprog/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/jelila-healing-menu/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/2023/09/08/always-such-a-pleasure/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/contact",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://spiritualhealerbali.com/the-gift/",
+  "status": 200,
+  "final": "https://jelila.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://atomic-temporary-5969783.wpcomstaging.com/category/a-spiritual-warrior/",
+  "status": 200,
+  "final": "https://wordpress.com/typo/?subdomain=atomic-temporary-5969783",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://atomic-temporary-5969783.wpcomstaging.com/category/a-spiritual-explorer/",
+  "status": 200,
+  "final": "https://wordpress.com/typo/?subdomain=atomic-temporary-5969783",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://atomic-temporary-5969783.wpcomstaging.com/category/a-latest-brochure-menu-jelila/#THEREPROGRAMMING",
+  "status": 200,
+  "final": "https://wordpress.com/typo/?subdomain=atomic-temporary-5969783",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://atomic-temporary-5969783.wpcomstaging.com/crystal-remedies/",
+  "status": 200,
+  "final": "https://wordpress.com/typo/?subdomain=atomic-temporary-5969783",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://atomic-temporary-5969783.wpcomstaging.com/category/a-latest-brochure-menu-jelila/",
+  "status": 200,
+  "final": "https://wordpress.com/typo/?subdomain=atomic-temporary-5969783",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://amzn.com/B00P26S9G4/Metatron's Cube - Remarkable Repository of Sacred Geometry - by Jelila",
+  "status": "ERR InvalidURL: URL can't contain control characters. \"/B00P26S9G4/Metatron's Cube - Remarkable ",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://amzn.com/B00US59LA2/How to Draw Metatron's Cube by Jelila",
+  "status": "ERR InvalidURL: URL can't contain control characters. \"/B00US59LA2/How to Draw Metatron's Cube b",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://amzn.com/B00US59LA2/How%20to Draw Metatron's Cube by Jelila",
+  "status": "ERR InvalidURL: URL can't contain control characters. \"/B00US59LA2/How%20to Draw Metatron's Cube",
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://amzn.com/B00US59LA2/How%20to%20Draw%20Metatron%27s%20Cube%20by%20Jelila",
+  "status": 404,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://fineartamerica.com/profiles/jelila-jelila.html?tab=artworkgalleries&artworkgalleryid=336411",
+  "status": 200,
+  "final": "http://fineartamerica.com/artistdirectory",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://fineartamerica.com/featured/metatrons-cube-black-jelila-jelila.html",
+  "status": 410,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://fineartamerica.com/featured/metatrons-cube-white-jelila-jelila.html",
+  "status": 410,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://fineartamerica.com/featured/metatrons-cube-pinky-purple-jelila-jelila.html",
+  "status": 410,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://fineartamerica.com/profiles/jelila-jelila.html",
+  "status": 200,
+  "final": "http://fineartamerica.com/artistdirectory",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.saatchiart.com/jelila",
+  "status": 403,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "http://jelila.us2.list-manage.com/subscribe/post?u=184120884b9efc9e776ad5e41&id=d121f5a7c4",
+  "status": 200,
+  "final": "https://jelila.us2.list-manage.com/subscribe/post?u=184120884b9efc9e776ad5e41&id=d121f5a7c4",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "112"
+ },
+ {
+  "url": "http://jelila.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=d121f5a7c4",
+  "status": 200,
+  "final": "https://jelila.us2.list-manage.com/subscribe?u=184120884b9efc9e776ad5e41&id=d121f5a7c4",
+  "type": "text/html; charset=UTF-8",
+  "bytes": "12128"
+ },
+ {
+  "url": "http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.jelila.com%2F&h=cAQFqP9sa&enc=AZPBvZeujke-KPbY5xz7NfP0XHTLpj2kBiFPbxDZMMTY-gpafa4kzPwpnWy185dsC34&s=1",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.facebook.com/events/661635847220092/?ref_dashboard_filter=upcoming",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.facebook.com/events/191472474377594/?context=create&ref_dashboard_filter=upcoming#",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.facebook.com/events/193740414161743/?context=create&ref_dashboard_filter=upcoming#",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://www.facebook.com/jelila.jelila",
+  "status": 400,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ },
+ {
+  "url": "https://twitter.com/JelilaJelila",
+  "status": 200,
+  "final": "https://x.com/JelilaJelila",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://jelila-healing-for-your-happy-life.teachable.com/p/create-your-dreams-manifestation-mastery",
+  "status": 200,
+  "final": "https://jelila-healing-for-your-happy-life.teachable.com/p/create-your-dreams-manifestation-mastery",
+  "type": "text/html; charset=utf-8",
+  "bytes": "137153"
+ },
+ {
+  "url": "https://gumroad.com/products/uyhhn/edit",
+  "status": 200,
+  "final": "https://gumroad.com/login?next=%2Fproducts%2Fuyhhn%2Fedit",
+  "type": "text/html; charset=utf-8",
+  "bytes": ""
+ },
+ {
+  "url": "http://www.biohackinghealing.com",
+  "status": 200,
+  "final": "https://biohackinghealing.com/",
+  "type": "text/html; charset=UTF-8",
+  "bytes": ""
+ },
+ {
+  "url": "https://mailchi.mp/5a3e839859b1/*%7Chttps://twitter.com/jelilajelila%7C*",
+  "status": 200,
+  "final": "https://mailchi.mp/5a3e839859b1/*%7Chttps://twitter.com/jelilajelila%7C*",
+  "type": "text/html",
+  "bytes": "2702"
+ },
+ {
+  "url": "https://mailchi.mp/5a3e839859b1/*%7Chttps://www.facebook.com/jelilajelila%7C*",
+  "status": 200,
+  "final": "https://mailchi.mp/5a3e839859b1/*%7Chttps://www.facebook.com/jelilajelila%7C*",
+  "type": "text/html",
+  "bytes": "2702"
+ },
+ {
+  "url": "https://www.linkedin.com/profile/view?id=1172660&trk=nav_responsive_tab_profile",
+  "status": 999,
+  "final": "",
+  "type": "",
+  "bytes": ""
+ }
+]

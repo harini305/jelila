@@ -1,0 +1,5 @@
+# Only the Next.js app is deployed; research material stays out of uploads
+docs
+*.md
+.next
+node_modules

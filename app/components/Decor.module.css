@@ -1,0 +1,194 @@
+.defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* ---------- Watercolour washes ---------- */
+.wash {
+  --wash-w: clamp(200px, 30vw, 460px);
+  position: absolute;
+  z-index: 0;
+  width: var(--wash-w);
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.tl {
+  top: -9%;
+  left: -9%;
+}
+
+.tr {
+  top: -10%;
+  right: -10%;
+  scale: -1 1;
+}
+
+.bl {
+  bottom: -12%;
+  left: -10%;
+}
+
+.br {
+  bottom: -12%;
+  right: -9%;
+}
+
+.line {
+  fill: none;
+  stroke: #073f13;
+  stroke-opacity: 0.26;
+  stroke-width: 1;
+}
+
+.lineFaint {
+  stroke-opacity: 0.18;
+}
+
+@media (max-width: 959px) {
+  .wash {
+    --wash-w: 58vw;
+  }
+}
+
+/* ---------- Painted rings ---------- */
+.ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transition: transform 1.2s var(--ease);
+}
+
+.ring circle {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.sageBold {
+  stroke: #9db37a;
+  stroke-width: 3.5;
+  stroke-dasharray: 210 18 40 12;
+  opacity: 0.85;
+}
+
+.sageThin {
+  stroke: #b9c9a0;
+  stroke-width: 1.5;
+  stroke-dasharray: 90 10 140 30;
+  opacity: 0.9;
+}
+
+.sandBold {
+  stroke: #c9976b;
+  stroke-width: 3.5;
+  stroke-dasharray: 160 14 90 20;
+  opacity: 0.8;
+}
+
+.sandThin {
+  stroke: #e9c9a6;
+  stroke-width: 1.5;
+  stroke-dasharray: 120 16 100 22;
+}
+
+.ringPhoto {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+}
+
+.ringImg {
+  position: absolute;
+  inset: 9%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--sand);
+  transition: transform 0.6s var(--ease);
+}
+
+.ringImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ringPhoto:hover .ringImg {
+  transform: scale(1.04);
+}
+
+.ringPhoto:hover .ring {
+  transform: rotate(40deg);
+}
+
+/* ---------- Blob photo ---------- */
+.blob {
+  position: relative;
+  display: block;
+}
+
+.blobImg {
+  position: absolute;
+  inset: 0;
+  clip-path: url(#wc-blob);
+  background: var(--sand);
+}
+
+.blobImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: photo-in 0.9s var(--ease);
+}
+
+@keyframes photo-in {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+}
+
+.blobOutline {
+  position: absolute;
+  inset: -3%;
+  width: 106%;
+  height: 106%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.blobOutline path {
+  fill: none;
+  stroke: var(--clay);
+  stroke-width: 3;
+  stroke-opacity: 0.8;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+}
+
+.blobOutline .blobOutlineThin {
+  stroke: var(--leaf);
+  stroke-width: 1.2;
+  stroke-opacity: 0.55;
+  stroke-dasharray: 2 6;
+}
+
+/* ---------- Resonance rings ---------- */
+.resonance {
+  position: absolute;
+  z-index: 0;
+  aspect-ratio: 1;
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.resonance circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.4;
+  transform-origin: 100px 100px;
+}

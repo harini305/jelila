@@ -1,0 +1,226 @@
+.header {
+  --progress: 0;
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  background: var(--canvas);
+  color: var(--green-900);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-md);
+  height: var(--header-h);
+}
+
+.brand {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--green-900);
+}
+
+/* Scroll progress along the bottom edge of the header */
+.progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--clay);
+  opacity: 0.7;
+  transform: scaleX(var(--progress));
+  transform-origin: left;
+}
+
+/* ---------- Desktop ---------- */
+.desktopNav {
+  display: none;
+}
+
+.linkList {
+  display: flex;
+  align-items: center;
+}
+
+/* Small separating dots, as in the hero highlight strip */
+.linkList li + li::before {
+  content: "·";
+  margin: 0 clamp(6px, 0.9vw, 14px);
+  color: var(--clay);
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.3s var(--ease);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  border-radius: 50%;
+  background: var(--leaf);
+  transform: scale(0);
+  transition: transform 0.4s var(--ease);
+}
+
+.link:hover,
+.link[aria-current] {
+  color: var(--green-900);
+}
+
+.link[aria-current]::after {
+  transform: scale(1);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 1px solid var(--clay);
+  border-radius: var(--radius-pill);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--green-900);
+  text-decoration: none;
+  transition: background-color 0.35s var(--ease), color 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+.cta:hover,
+.cta[aria-current] {
+  background: var(--green-900);
+  border-color: var(--green-900);
+  color: var(--sand);
+}
+
+@media (min-width: 960px) {
+  .desktopNav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(16px, 2vw, 32px);
+    padding-left: clamp(24px, 6vw, 120px);
+  }
+
+  .linkList {
+    margin-inline: auto;
+  }
+
+  .toggle,
+  .mobileNav {
+    display: none !important;
+  }
+}
+
+/* ---------- Mobile ---------- */
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 4px;
+  background: none;
+  border: 0;
+  color: var(--green-900);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  position: relative;
+  width: 22px;
+  height: 12px;
+}
+
+.toggleIcon::before,
+.toggleIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.35s var(--ease), top 0.35s var(--ease);
+}
+
+.toggleIcon::before {
+  top: 0;
+}
+
+.toggleIcon::after {
+  top: 10px;
+}
+
+.toggleIcon[data-open="true"]::before {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.toggleIcon[data-open="true"]::after {
+  top: 5px;
+  transform: rotate(-45deg);
+}
+
+.mobileNav {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  background: var(--paper);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mobileLinks {
+  display: grid;
+  padding-block: var(--gap-md) var(--gap-xl);
+}
+
+.mobileLinks li {
+  animation: panel-in 0.45s var(--ease) both;
+  animation-delay: calc(var(--i) * 45ms);
+}
+
+.mobileLink {
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  border-bottom: 1px solid var(--clay-line);
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--green-900);
+  text-decoration: none;
+}
+
+.mobileLink[aria-current] {
+  color: var(--leaf);
+  font-style: normal;
+}
+
+.mobileCta {
+  padding-top: var(--gap-lg);
+}
+
+.mobileCta a {
+  width: 100%;
+}

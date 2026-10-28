@@ -1,0 +1,233 @@
+.grid {
+  display: grid;
+  gap: var(--gap-md);
+}
+
+.rings {
+  right: -18vh;
+  top: 50%;
+  width: 95vh;
+  translate: 0 -50%;
+  color: var(--lime);
+  opacity: 0.22;
+}
+
+.side {
+  display: grid;
+  gap: var(--gap-md);
+  align-content: start;
+}
+
+.intro {
+  max-width: 34rem;
+}
+
+/* Mobile: options become a horizontal row of chips */
+.list {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-inline: calc(var(--gutter) * -1);
+  padding: 2px var(--gutter);
+  scroll-padding-inline: var(--gutter);
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.option {
+  flex: none;
+  display: grid;
+  gap: 2px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  text-align: left;
+  color: var(--on-dark);
+  cursor: pointer;
+  transition: background-color 0.35s var(--ease), color 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+.option:hover {
+  border-color: var(--on-dark);
+}
+
+.option[aria-selected="true"] {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--green-950);
+}
+
+.optionTitle {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.optionDetail {
+  display: none;
+}
+
+/* ---------- Detail stage ---------- */
+.stage {
+  position: relative;
+}
+
+.detail {
+  display: grid;
+  gap: var(--gap-md);
+  animation: panel-in 0.5s var(--ease);
+}
+
+.detail[hidden] {
+  display: none;
+}
+
+.image {
+  width: 100%;
+  height: min(26vh, 52vw);
+}
+
+.card {
+  display: grid;
+  gap: var(--gap-sm);
+  justify-items: start;
+  color: var(--on-dark-muted);
+}
+
+.cardTitle {
+  font-size: var(--fs-h3);
+  color: var(--on-dark);
+}
+
+.card :global(.text-link) {
+  color: var(--on-dark);
+}
+
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: var(--gap-xl);
+    align-items: center;
+  }
+
+  .list {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border-top: 1px solid var(--line-on-dark);
+  }
+
+  .option {
+    position: relative;
+    padding: clamp(10px, 1.7vh, 16px) 0 clamp(10px, 1.7vh, 16px) 22px;
+    border: 0;
+    border-bottom: 1px solid var(--line-on-dark);
+    border-radius: 0;
+  }
+
+  .option::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-radius: 50%;
+    border: 2px solid var(--lime);
+    transition: background-color 0.3s ease, transform 0.4s var(--ease);
+  }
+
+  .option:hover {
+    background: rgba(245, 222, 198, 0.06);
+  }
+
+  .option[aria-selected="true"] {
+    background: transparent;
+    color: var(--on-dark);
+  }
+
+  .option[aria-selected="true"]::before {
+    background: var(--lime);
+    transform: scale(1.3);
+  }
+
+  .optionTitle {
+    font-family: var(--font-heading);
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    white-space: normal;
+  }
+
+  .option[aria-selected="true"] .optionTitle {
+    font-style: normal;
+  }
+
+  .optionDetail {
+    display: block;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    color: var(--lime);
+  }
+
+  .detail {
+    position: relative;
+    display: block;
+  }
+
+  .image {
+    width: 92%;
+    height: min(64vh, 580px);
+  }
+
+  .card {
+    position: absolute;
+    left: var(--gap-md);
+    right: var(--gap-md);
+    bottom: var(--gap-md);
+    max-width: 30rem;
+    padding: var(--gap-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--clay-line);
+    background: rgba(251, 247, 241, 0.96);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.6);
+    color: var(--ink-muted);
+  }
+
+  .cardTitle {
+    color: var(--green-900);
+  }
+
+  .card :global(.text-link) {
+    color: var(--green-900);
+  }
+
+  .card > p {
+    font-size: var(--fs-small);
+  }
+}
+
+/* Short screens: drop the intro line so the selector and detail fit */
+@media (min-width: 960px) and (max-height: 820px) {
+  .intro {
+    display: none;
+  }
+}
+
+@media (max-width: 959px) and (max-height: 720px) {
+  .intro {
+    display: none;
+  }
+
+  .image {
+    height: 20vh;
+  }
+}

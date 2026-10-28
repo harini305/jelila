@@ -1,0 +1,187 @@
+.grid {
+  display: grid;
+  gap: var(--gap-lg);
+  align-items: center;
+}
+
+.rings {
+  left: -22vh;
+  top: 50%;
+  width: 90vh;
+  translate: 0 -50%;
+  color: var(--clay);
+  opacity: 0.45;
+}
+
+/* ---------- Photos ---------- */
+.media {
+  position: relative;
+}
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.inset {
+  display: none;
+}
+
+/* ---------- Copy + tabs ---------- */
+.copy {
+  display: grid;
+  gap: var(--gap-md);
+}
+
+.lead {
+  color: var(--ink);
+}
+
+.tabsWrap {
+  display: grid;
+  gap: var(--gap-md);
+}
+
+.panel {
+  display: grid;
+  gap: var(--gap-sm);
+  max-width: var(--measure);
+  color: var(--ink-muted);
+  animation: panel-in 0.45s var(--ease);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.list li,
+.pressList li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.list li + li {
+  margin-top: 6px;
+}
+
+.list li::before,
+.pressList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--leaf);
+}
+
+.pressPanel {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: var(--gap-md);
+}
+
+.pressList {
+  display: grid;
+  gap: 4px;
+}
+
+.scans {
+  display: flex;
+  gap: 10px;
+}
+
+.scans img {
+  width: auto;
+  height: clamp(110px, 18vh, 200px);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 24px -14px rgba(4, 41, 12, 0.5);
+}
+
+/* Mobile order: heading, wide photo, tabs. The lead is dropped here because
+   the "Her story" tab already carries the introduction. */
+@media (max-width: 959px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .copy {
+    display: contents;
+  }
+
+  .copy > h2 {
+    order: 1;
+  }
+
+  .media {
+    order: 2;
+  }
+
+  .tabsWrap {
+    order: 3;
+  }
+
+  .lead {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .scans img {
+    height: 96px;
+  }
+
+  .pressPanel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: var(--gap-xl);
+  }
+
+  .media {
+    padding: 0 10% 10% 0;
+  }
+
+  .portrait {
+    aspect-ratio: 4 / 4.6;
+    max-height: 62vh;
+  }
+
+  .inset {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    max-width: 24vh;
+    z-index: 2;
+  }
+
+  .panel {
+    min-height: 9em;
+  }
+}
+
+@media (max-width: 959px) and (max-height: 720px) {
+  .media {
+    display: none;
+  }
+}
+
+/* Phones: keep the rings behind the photo, clear of the paragraph text */
+@media (max-width: 959px) {
+  .rings {
+    left: 50%;
+    top: 30%;
+    width: 120vw;
+    translate: -50% -50%;
+    opacity: 0.3;
+  }
+}

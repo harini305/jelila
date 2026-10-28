@@ -1,0 +1,272 @@
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-md);
+  margin-bottom: var(--gap-lg);
+}
+
+.panel {
+  display: grid;
+  gap: var(--gap-lg);
+  animation: panel-in 0.5s var(--ease);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.itemTitle {
+  font-size: var(--fs-h3);
+  color: var(--green-900);
+}
+
+/* ---------- Books ---------- */
+.shelf {
+  --cover-h: clamp(120px, 22vh, 230px);
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(10px, 1.6vw, 22px);
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-inline: calc(var(--gutter) * -1);
+  padding: 16px var(--gutter) 18px;
+  border-bottom: 1px solid var(--clay);
+}
+
+.shelf::-webkit-scrollbar {
+  display: none;
+}
+
+.cover {
+  flex: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.45s var(--ease);
+}
+
+.cover img {
+  width: auto;
+  height: var(--cover-h);
+  border-radius: 4px;
+  box-shadow: 0 12px 24px -14px rgba(4, 41, 12, 0.6);
+  filter: saturate(0.75);
+  opacity: 0.8;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.cover:hover {
+  transform: translateY(-6px);
+}
+
+.cover[aria-pressed="true"] {
+  transform: translateY(-12px);
+}
+
+.cover[aria-pressed="true"] img,
+.cover:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+.bookDetail {
+  display: grid;
+  gap: var(--gap-sm);
+  justify-items: start;
+  max-width: 44rem;
+  animation: panel-in 0.45s var(--ease);
+}
+
+/* ---------- Music ---------- */
+.albums {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-sm);
+}
+
+.guitar {
+  display: none;
+}
+
+.album {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  max-height: 22vh;
+  box-shadow: 0 16px 30px -18px rgba(4, 41, 12, 0.6);
+}
+
+.musicCopy {
+  display: grid;
+  gap: var(--gap-md);
+  align-content: center;
+}
+
+.miniQuote {
+  display: none;
+  gap: 8px;
+  padding-left: var(--gap-md);
+  border-left: 2px solid var(--clay);
+}
+
+.miniQuote p {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-size: var(--fs-lead);
+  line-height: 1.4;
+  color: var(--green-900);
+}
+
+.miniQuote figcaption {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--leaf);
+}
+
+.musicActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.playIcon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+.playerFrame {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: 120px;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+
+/* ---------- Crystals ---------- */
+.crystalCopy {
+  display: grid;
+  gap: var(--gap-md);
+  justify-items: start;
+  align-content: center;
+}
+
+.crystalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-sm);
+}
+
+.crystal {
+  width: 100%;
+  max-width: 30vh;
+  justify-self: center;
+}
+
+@media (min-width: 960px) {
+  .shelf {
+    /* six covers average ~0.71 wide per unit height; keep the row inside the container */
+    --cover-h: max(130px, min(30vh, 17vw, 260px));
+    margin: 0;
+    padding: 20px 0 18px;
+    overflow: visible;
+    justify-content: space-between;
+  }
+
+  .bookDetail {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) auto;
+    align-items: baseline;
+    column-gap: var(--gap-xl);
+    max-width: none;
+  }
+
+  .music {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    column-gap: var(--gap-xl);
+    align-items: center;
+  }
+
+  /* Painted guitar as a backdrop with the two albums overlapping it */
+  .albums {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: var(--gap-md);
+    padding: 0 var(--gap-lg) var(--gap-md);
+    min-height: min(52vh, 460px);
+  }
+
+  .guitar {
+    display: block;
+    position: absolute;
+    inset: 0 0 18% 0;
+  }
+
+  .album {
+    position: relative;
+    max-height: none;
+    border: 5px solid var(--paper);
+  }
+
+  .album:nth-of-type(3) {
+    transform: translateY(-14%);
+  }
+
+  .miniQuote {
+    display: grid;
+  }
+
+  .crystals {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    column-gap: var(--gap-xl);
+    align-items: center;
+  }
+
+  .crystalGrid {
+    gap: var(--gap-md);
+  }
+
+  .crystal {
+    max-width: none;
+  }
+
+  .crystal:nth-child(2) {
+    translate: 0 -12%;
+  }
+}
+
+@media (min-width: 960px) and (max-height: 820px) {
+  .miniQuote {
+    display: none;
+  }
+}
+
+@media (max-width: 959px) and (max-height: 720px) {
+  .shelf {
+    --cover-h: 92px;
+    padding-block: 10px 12px;
+  }
+
+  .album {
+    max-height: 15vh;
+  }
+
+  .albums {
+    grid-template-columns: auto auto;
+    justify-content: start;
+  }
+
+  .crystal {
+    max-width: 22vh;
+  }
+}

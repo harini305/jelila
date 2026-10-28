@@ -1,0 +1,483 @@
+/* ---------- Design tokens ---------- */
+:root {
+  /* Verified brand colours */
+  --green-900: #073f13;
+  --leaf: #669404;
+  --lime: #7db20a;
+  --sand: #f5dec6;
+
+  /* Neutrals built around the brand */
+  --canvas: #f1e9de;
+  --clay: #b98a63; /* decorative outlines and rings only, not text */
+  --clay-line: rgba(185, 138, 99, 0.45);
+  --blush: #f8efe4;
+  --sage: #e3eadb;
+  --clay-tint: #efe0d1;
+  --green-950: #04290c;
+  --paper: #fbf7f1;
+  --white: #ffffff;
+  --ink: #1d2a1f;
+  --ink-muted: #4c584d;
+  --on-dark: #f5dec6;
+  --on-dark-muted: rgba(245, 222, 198, 0.78);
+  --line: rgba(7, 63, 19, 0.16);
+  --line-on-dark: rgba(245, 222, 198, 0.2);
+
+  /* Type: sizes respond to both width and height so each panel fits one screen */
+  /* A single font family across the site (Cormorant Garamond) */
+  --font-heading: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-body: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --fs-display: clamp(2.375rem, min(6.4vw, 8.4vh), 5.5rem);
+  --fs-h2: clamp(1.875rem, min(4.2vw, 6vh), 3.5rem);
+  --fs-h3: clamp(1.25rem, min(2.1vw, 3.2vh), 1.75rem);
+  --fs-quote: clamp(1.25rem, min(2.6vw, 3.9vh), 2.25rem);
+  --fs-lead: clamp(1.1875rem, min(1.6vw, 2.5vh), 1.4375rem);
+  --fs-body: clamp(1.0625rem, min(1.35vw, 2.2vh), 1.25rem);
+  --fs-small: clamp(0.9375rem, min(1.15vw, 1.9vh), 1.0625rem);
+  --lh-tight: 1.04;
+  --lh-heading: 1.12;
+  --lh-body: 1.5;
+  --measure: 60ch;
+
+  /* Layout */
+  --content-max: 1240px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 60px;
+  --sheet-inset: 0px;
+  --sheet-radius: 0px;
+  --panel-pad: clamp(20px, 4vh, 52px);
+  --gap-xs: 8px;
+  --gap-sm: clamp(10px, 1.6vh, 16px);
+  --gap-md: clamp(14px, 2.4vh, 24px);
+  --gap-lg: clamp(20px, 3.6vh, 44px);
+  --gap-xl: clamp(28px, 5vw, 72px);
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* Controls */
+  --btn-h: 46px;
+  --btn-px: 24px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --header-h: 72px;
+    --sheet-inset: 12px;
+    --sheet-radius: 32px;
+  }
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: var(--lh-heading);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--leaf);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.on-dark :focus-visible {
+  outline-color: var(--lime);
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--green-900);
+  color: var(--sand);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* ---------- Panels ----------
+   Every section is exactly one screen below the fixed header, so a section
+   link shows that section alone. Content is sized to fit inside it. */
+.panel {
+  display: flex;
+  min-height: calc(100svh - var(--header-h));
+  scroll-margin-top: var(--header-h);
+}
+
+/* Only the hero is a framed card; every other section runs full width so the
+   page flows rather than reading as a stack of slides */
+.panel-inset {
+  padding-inline: var(--sheet-inset);
+  padding-bottom: var(--sheet-inset);
+}
+
+.panel-inset > .sheet {
+  border-radius: var(--sheet-radius);
+}
+
+.sheet {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding-block: var(--panel-pad);
+  overflow: hidden;
+  background: var(--paper);
+}
+
+/* Panel content always sits above the watercolour washes */
+.sheet > :not(svg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section moods, all drawn from the hero palette */
+.sheet-blush {
+  background: var(--blush);
+}
+
+.sheet-sand {
+  background: var(--sand);
+}
+
+.sheet-sage {
+  background: var(--sage);
+}
+
+.sheet-clay {
+  background: var(--clay-tint);
+}
+
+.sheet-white {
+  background: var(--white);
+}
+
+.sheet-forest {
+  background: var(--green-900);
+  color: var(--on-dark);
+}
+
+.container {
+  width: min(100% - 2 * var(--gutter), var(--content-max));
+  margin-inline: auto;
+}
+
+.section-title {
+  font-size: var(--fs-h2);
+  color: var(--green-900);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--leaf);
+}
+
+.on-dark .section-title {
+  color: var(--on-dark);
+}
+
+.on-dark .section-title em {
+  color: var(--lime);
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  max-width: var(--measure);
+}
+
+.muted {
+  color: var(--ink-muted);
+}
+
+.on-dark .muted {
+  color: var(--on-dark-muted);
+}
+
+/* ---------- Buttons & links ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: var(--btn-h);
+  padding-inline: var(--btn-px);
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease),
+    transform 0.3s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--green-900);
+  color: var(--sand);
+  box-shadow: 0 14px 30px -16px rgba(4, 41, 12, 0.55);
+}
+
+.btn-primary:hover {
+  background: var(--green-950);
+}
+
+.btn-lime {
+  background: var(--lime);
+  color: var(--green-950);
+}
+
+.btn-lime:hover {
+  background: var(--sand);
+}
+
+.btn-light {
+  background: var(--sand);
+  color: var(--green-900);
+}
+
+.btn-light:hover {
+  background: var(--white);
+}
+
+.btn-outline {
+  border-color: var(--clay-line);
+  color: var(--green-900);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  border-color: var(--green-900);
+}
+
+.on-dark .btn-outline {
+  border-color: var(--line-on-dark);
+  color: var(--on-dark);
+}
+
+.on-dark .btn-outline:hover {
+  border-color: var(--on-dark);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: var(--fs-small);
+  color: var(--green-900);
+  text-decoration: underline;
+  text-decoration-color: var(--lime);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.3s var(--ease);
+}
+
+.text-link:hover {
+  text-decoration-color: currentColor;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s var(--ease);
+}
+
+a:hover .arrow,
+button:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* Shared tab strip used by several panels */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 5px;
+  border: 1px solid var(--clay-line);
+  border-radius: var(--radius-pill);
+  background: rgba(251, 247, 241, 0.85);
+  backdrop-filter: blur(6px);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.tab {
+  min-height: 38px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--green-900);
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.tab:hover {
+  background: rgba(7, 63, 19, 0.08);
+}
+
+.tab[aria-selected="true"] {
+  background: var(--green-900);
+  color: var(--sand);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Motion ---------- */
+.motion [data-hero] {
+  opacity: 0;
+  animation: hero-fallback 0.6s ease 2.5s forwards;
+}
+
+@keyframes hero-fallback {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Small phones: tighter panel padding so every panel still fits one screen */
+@media (max-width: 959px) and (max-height: 720px) {
+  :root {
+    --panel-pad: 16px;
+    --gap-lg: 16px;
+  }
+}
+
+/* Narrow phones: tabs share the row equally instead of wrapping */
+@media (max-width: 400px) {
+  .tabs {
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2px;
+  }
+
+  .tab {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 4px;
+  }
+}
